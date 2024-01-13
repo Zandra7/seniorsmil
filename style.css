@@ -48,6 +48,14 @@ nav a:hover {
     color: #F8B502;
 }
 
+.selected-nav {
+    opacity: 40%;
+}
+
+.selected-nav:hover {
+    color: black;
+}
+
 /*-- --- - -- MAIN -- - --- --*/
 
 main {
@@ -64,7 +72,7 @@ p {
     font-size: 15px;
 }
 
-.om-oss > h3, .flex-hjem > div > h3 {
+h3 {
     margin-block: 40px 20px;
     font-size: 20px;
     background-color: #F8D454;
@@ -84,6 +92,10 @@ p {
 
 .inline {
     padding-left: 21px;
+}
+
+.home-ikon {
+    margin: 40px 0;
 }
 
 /* 767px (Less than TABLET) */
