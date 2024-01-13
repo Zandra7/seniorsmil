@@ -60,13 +60,15 @@ p {
 
 /*-- --- - -- OM OSS -- - --- --*/
 
-.om-oss p {
+.om-oss > p, li {
     font-size: 15px;
 }
 
 .om-oss > h3, .flex-hjem > div > h3 {
     margin-block: 40px 20px;
     font-size: 20px;
+    background-color: #F8D454;
+    padding: 20px 21px;
 }
 
 .flex-hjem {
@@ -78,4 +80,50 @@ p {
 .flex-hjem div ul li {
     list-style: none;
     margin-block: 20px 0;
+}
+
+.inline {
+    padding-left: 21px;
+}
+
+@media only screen and (min-width: 767px) {
+    .flex-hjem :nth-child(1) {
+        width: 100%;
+    }
+}
+
+/* 767px (Less than TABLET) */
+@media only screen and (max-width: 767px) {
+    .logo {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+
+    nav a {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #F8B502;
+    }
+
+    nav a:nth-child(1) {
+        border-top: 1px solid #F8B502;
+    }
+
+    .flex-hjem {
+        flex-direction: column-reverse;
+    }
+
+    .spleis {
+        width: 100%;
+    }
+
+    .flex-hjem > div > h3 {
+        margin-top: 0;
+    }
 }
