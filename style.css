@@ -12,9 +12,6 @@
     font-family: QuireSans;
 }
 
-body {
-    margin-inline: 515px;
-}
 /*-- --- - -- LOGO -- - --- --*/
 .logo {
     display: block;
@@ -26,6 +23,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    margin-inline: 10vw;
 }
 
 nav a {
@@ -43,6 +41,16 @@ nav a:hover {
     color: #F8B502;
 }
 
+/*-- --- - -- MAIN -- - --- --*/
+
+main {
+    margin-inline: 10vw;
+}
+
+p {
+    line-height: 1.75;
+}
+
 /*-- --- - -- OM OSS -- - --- --*/
 
 .om-oss {
@@ -51,8 +59,4 @@ nav a:hover {
 
 .om-oss h3 {
     margin-block: 40px 20px;
-}
-
-p {
-    line-height: 1.75;
 }
