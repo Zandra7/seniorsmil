@@ -86,12 +86,6 @@ p {
     padding-left: 21px;
 }
 
-@media only screen and (min-width: 767px) {
-    .flex-hjem :nth-child(1) {
-        width: 100%;
-    }
-}
-
 /* 767px (Less than TABLET) */
 @media only screen and (max-width: 767px) {
     .logo {
@@ -129,5 +123,12 @@ p {
 
     .flex-hjem {
         margin-bottom: 200px;
+    }
+}
+
+/* 768px (More than TABLET) */
+@media only screen and (min-width: 767px) {
+    .flex-hjem :nth-child(1) {
+        width: 80%;
     }
 }
