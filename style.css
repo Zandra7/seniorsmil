@@ -1,81 +1,134 @@
+/*Mørk: #F8B502*/
+/*Lys: #F8D454*/
+
 @font-face {
     font-family: 'QuireSans';
     src: url(QuireSans.ttf);
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 30px;
-    line-height: 1.75;
 }
 
 * {
     margin: 0;
     padding: 0;
     font-family: QuireSans;
+
 }
 
+/*-- --- - -- LOGO -- - --- --*/
+.logo {
+    display: block;
+    width: 642px;
+    margin: 0 auto;
+}
+
+/*-- --- - -- NAVBAR -- - --- --*/
 nav {
     display: flex;
-    gap: 50px;
-    background-color: #F9B500;
-    color: black;
-    padding: 20px 0;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    margin-inline: 10vw;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    background-color: white;
+    padding: 5px;
 }
 
 nav a {
-    cursor: pointer;
+    color: black;
+    width: 156px;
+    text-align: center;
+    text-decoration: none;
+    padding-block: 11px;
+    border-top: 1px solid #F8B502;
+    border-bottom: 1px solid #F8B502; 
+    font-size: 18px;
 }
+
+nav a:hover {
+    color: #F8B502;
+}
+
+/*-- --- - -- MAIN -- - --- --*/
 
 main {
-    margin: 0 300px;
+    margin-inline: 10vw;
 }
 
-.logo {
-    width: 50vw;
-    margin: 0 auto;
-    display: block;
+p {
+    line-height: 1.75;
 }
 
-.flex-container {
-    margin-top: 50px;
+/*-- --- - -- OM OSS -- - --- --*/
+
+.om-oss > p, li {
+    font-size: 15px;
+}
+
+.om-oss > h3, .flex-hjem > div > h3 {
+    margin-block: 40px 20px;
+    font-size: 20px;
+    background-color: #F8D454;
+    padding: 20px 21px;
+}
+
+.flex-hjem {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+
 }
 
-.barekraft-bilde {
-    width: 200px;
+.flex-hjem div ul li {
+    list-style: none;
+    margin-block: 20px 0;
 }
 
-a {
-   color: black; 
-   text-decoration: none;
+.inline {
+    padding-left: 21px;
 }
 
-a h4:hover {
-    text-decoration: underline;
+/* 767px (Less than TABLET) */
+@media only screen and (max-width: 767px) {
+    .logo {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+
+    nav a {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #F8B502;
+    }
+
+    nav a:nth-child(1) {
+        border-top: 1px solid #F8B502;
+    }
+
+    .flex-hjem {
+        flex-direction: column-reverse;
+    }
+
+    .spleis {
+        width: 100%;
+    }
+
+    .flex-hjem > div > h3 {
+        margin-top: 0;
+    }
+
+    .flex-hjem {
+        margin-bottom: 200px;
+    }
 }
 
-h2 {
-    margin-top: 50px;
-}
-
-ul {
-    margin-left: 70px;
-}
-
-.kontakt-some {
-    height: 325px;
-    padding: 20px 20px; 
-}
-
-.kontakt {
-    margin-top: 0;
-}
-
-#utvikling {
-    margin-bottom: 100px;
+/* 768px (More than TABLET) */
+@media only screen and (min-width: 767px) {
+    .flex-hjem :nth-child(1) {
+        width: 80%;
+    }
 }
