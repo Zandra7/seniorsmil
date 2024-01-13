@@ -126,4 +126,8 @@ p {
     .flex-hjem > div > h3 {
         margin-top: 0;
     }
+
+    .flex-hjem {
+        margin-bottom: 200px;
+    }
 }
