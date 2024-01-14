@@ -3,7 +3,12 @@
 
 @font-face {
     font-family: 'QuireSans';
-    src: url(QuireSans.ttf);
+    src: url(fonts/QuireSans.ttf);
+}
+
+@font-face {
+    font-family: 'QuireSansBold';
+    src: url(fonts/QuireSansBold.ttf);
 }
 
 * {
@@ -49,8 +54,8 @@ nav a:hover {
 }
 
 .selected-nav {
-    font-weight: bold;
     color: #F8B502;
+    font-family: QuireSansBold;
 }
 
 .om-oss-nav {
