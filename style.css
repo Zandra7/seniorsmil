@@ -140,6 +140,13 @@ li {
     margin-block: 10px 0;
 }
 
+@media only screen and (max-width: 1023px) {
+    nav a {
+        font-size: 16px;
+        width: 115px;
+    }
+}
+
 /* 767px (Less than TABLET) */
 @media only screen and (max-width: 767px) {
     .logo {
