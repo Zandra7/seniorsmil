@@ -49,11 +49,31 @@ nav a:hover {
 }
 
 .selected-nav {
-    opacity: 40%;
+    font-weight: bold;
+    color: #F8B502;
 }
 
-.selected-nav:hover {
-    color: black;
+.om-oss-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.om-oss-nav img {
+    height: 30px;
+}
+
+.home-g {
+    display: none;
+}
+
+a:hover, .selected-nav { /* burde ikke funke? */
+    .home-s {
+        display: none;
+    }
+    .home-g {
+        display: block;
+    }
 }
 
 /*-- --- - -- MAIN -- - --- --*/
@@ -72,6 +92,10 @@ p {
     font-size: 15px;
 }
 
+.kontakt {
+    width: 50%;
+}
+
 h3 {
     margin-block: 40px 20px;
     font-size: 20px;
@@ -79,10 +103,15 @@ h3 {
     padding: 20px 21px;
 }
 
+h4 {
+    margin-block: 40px 20px;
+    font-size: 20px;
+}
+
 .flex-hjem {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 100px;
 }
 
 .flex-hjem div ul li {
@@ -115,7 +144,7 @@ li {
     .logo {
         width: 100%;
     }
-
+    
     nav {
         flex-direction: column;
         width: 100%;
@@ -132,6 +161,14 @@ li {
     nav a:nth-child(1) {
         border-top: 1px solid #F8B502;
     }
+
+    .om-oss-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
 
     .flex-hjem {
         flex-direction: column-reverse;
@@ -164,8 +201,8 @@ li {
 }
 
 /* 768px (More than TABLET) */
-@media only screen and (min-width: 767px) {
+/* @media only screen and (min-width: 767px) {
     .flex-hjem :nth-child(1) {
-        width: 80%;
+        width: 100%;
     }
-}
+} */
