@@ -185,6 +185,15 @@ li {
     .flex-hjem {
         margin-bottom: 200px;
     }
+
+    .kontakt {
+        width: 100%;
+    }
+    
+    .spleis-flex {
+        margin-top: 25px;
+        display: flex;
+    }
 }
 
 /* 425px (Less than MOBILE) */
