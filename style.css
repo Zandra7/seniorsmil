@@ -69,6 +69,10 @@ p {
     font-size: 15px;
 }
 
+.kontakt {
+    width: 50%;
+}
+
 h3 {
     margin-block: 40px 20px;
     font-size: 20px;
@@ -76,10 +80,15 @@ h3 {
     padding: 20px 21px;
 }
 
+h4 {
+    margin-block: 40px 20px;
+    font-size: 20px;
+}
+
 .flex-hjem {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 100px;
 }
 
 .flex-hjem div ul li {
@@ -161,8 +170,8 @@ li {
 }
 
 /* 768px (More than TABLET) */
-@media only screen and (min-width: 767px) {
+/* @media only screen and (min-width: 767px) {
     .flex-hjem :nth-child(1) {
-        width: 80%;
+        width: 100%;
     }
-}
+} */
