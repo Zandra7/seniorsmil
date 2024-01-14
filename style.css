@@ -80,6 +80,7 @@ a:hover, .selected-nav { /* burde ikke funke? */
 
 main {
     margin-inline: 10vw;
+    margin-block-end: 200px;
 }
 
 p {
@@ -111,7 +112,6 @@ h4 {
 .flex-hjem {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
 }
 
 .flex-hjem div ul li {
