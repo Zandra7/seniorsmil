@@ -98,6 +98,15 @@ h3 {
     margin: 40px 0;
 }
 
+.flex-bærekraft {
+    display: flex;
+    gap: 10px;
+}
+
+.img-bærekraft {
+    width: 200px;
+}
+
 /* 767px (Less than TABLET) */
 @media only screen and (max-width: 767px) {
     .logo {
@@ -135,6 +144,19 @@ h3 {
 
     .flex-hjem {
         margin-bottom: 200px;
+    }
+}
+
+/* 425px (Less than MOBILE) */
+@media only screen and (max-width: 425px) {
+    .flex-bærekraft {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .img-bærekraft {
+        width: 100%;
     }
 }
 
