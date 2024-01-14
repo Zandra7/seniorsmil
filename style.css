@@ -49,11 +49,8 @@ nav a:hover {
 }
 
 .selected-nav {
-    opacity: 40%;
-}
-
-.selected-nav:hover {
-    color: black;
+    font-weight: bold;
+    color: #F8B502;
 }
 
 /*-- --- - -- MAIN -- - --- --*/
