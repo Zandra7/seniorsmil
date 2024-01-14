@@ -48,6 +48,14 @@ nav a:hover {
     color: #F8B502;
 }
 
+.selected-nav {
+    opacity: 40%;
+}
+
+.selected-nav:hover {
+    color: black;
+}
+
 /*-- --- - -- MAIN -- - --- --*/
 
 main {
@@ -64,7 +72,7 @@ p {
     font-size: 15px;
 }
 
-.om-oss > h3, .flex-hjem > div > h3 {
+h3 {
     margin-block: 40px 20px;
     font-size: 20px;
     background-color: #F8D454;
@@ -79,11 +87,27 @@ p {
 
 .flex-hjem div ul li {
     list-style: none;
-    margin-block: 20px 0;
 }
 
 .inline {
     padding-left: 21px;
+}
+
+.home-ikon {
+    margin: 40px 0;
+}
+
+.flex-bærekraft {
+    display: flex;
+    gap: 10px;
+}
+
+.img-bærekraft {
+    width: 200px;
+}
+
+li {
+    margin-block: 10px 0;
 }
 
 /* 767px (Less than TABLET) */
@@ -123,6 +147,19 @@ p {
 
     .flex-hjem {
         margin-bottom: 200px;
+    }
+}
+
+/* 425px (Less than MOBILE) */
+@media only screen and (max-width: 425px) {
+    .flex-bærekraft {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .img-bærekraft {
+        width: 100%;
     }
 }
 
